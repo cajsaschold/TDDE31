@@ -17,7 +17,7 @@ The temperature forecast is computed using a Gaussian kernel-based approach The 
 - **Additive Kernel:** The sum of the three kernels.  
 - **Multiplicative Kernel:** The product of the three kernels.  
 
-### ** Key Considerations**  
+### Key Considerations 
 - **Choosing Kernel Widths:** The smoothing coefficients for each kernel (`h_distance`, `h_date`, `h_time`) are optimized to ensure closer points have higher weights.  
 - **Performance Optimizations:**  
   - Filtering out temperature readings after the forecast date.  
