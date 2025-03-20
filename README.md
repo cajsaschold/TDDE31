@@ -1,11 +1,18 @@
-# TDDE31
-The assignments from the course "Big Data Analytics" at LiU 
+# Big Data Analytics
+This repository contains assignments from the Big Data Analytics (BDA1 & BDA2) course, focusing on Apache Spark, Spark SQL, and Machine Learning. The tasks involve processing large-scale weather datasets, performing data transformations, aggregations, and predictive modeling.
 
-## Lab1
-Using Apache Spark to extract relevant data from large csv files of weather readings.
+## Contents
 
-## Lab2
-Using Spark SQL to extract relevant data from large csv files of weather readings.
-
-## Lab3
-Implementing a kernel model in Spark (PySpark) to predict hourly temperatures for a specific date and location in Sweden.
+### 1. Spark Exercises (BDA1)
+- Implements Apache Spark (RDD-based) solutions for weather data analysis.
+- Tasks include extreme temperature detection, high-temperature counts, station-based monthly averages, and precipitation analysis.
+- Optimizations include data filtering, caching, and distributed processing.
+### 2.Spark SQL Exercises (BDA2)
+- Replicates BDA1 exercises using Spark SQL.
+- Utilizes built-in API functions for efficient querying and aggregation.
+- Focuses on structured data processing and optimization techniques.
+### 3. Machine Learning for Big Data
+- Implements a kernel-based temperature prediction model using PySpark.
+- Uses Gaussian kernels to model spatial, temporal, and hourly variations.
+- Applies additive and multiplicative kernels to compare predictive performance.
+- Optimized using RDD caching and data broadcasting.
