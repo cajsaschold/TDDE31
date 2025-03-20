@@ -1,14 +1,6 @@
 # Spark Exercises
 
-This repository contains a series of **Big Data Analytics (BDA1)** exercises focused on **Apache Spark**. The tasks involve processing large-scale temperature and precipitation datasets to extract insights such as temperature trends, station-based averages, and precipitation levels.
-
-## Overview
-
-- The exercises are designed to be executed using Spark (PySpark or Scala).
-- The dataset consists of temperature and precipitation readings from 1950-2014.
-- The project demonstrates data filtering, aggregations, and distributed computing using Spark’s RDD transformations and actions.
-
----
+This repository contains a series of **Big Data Analytics (BDA1)** exercises focused on **Apache Spark**. The tasks involve processing large-scale temperature and precipitation datasets to extract insights such as temperature trends, station-based averages, and precipitation levels. The exercises are designed to be executed using Spark (PySpark or Scala).
 
 ## **Exercises & Tasks**
 
