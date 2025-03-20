@@ -2,46 +2,40 @@
 
 This repository contains **Big Data Analytics (BDA2) exercises** focused on **Spark SQL**, designed to process and analyze large-scale **temperature and precipitation datasets**. The exercises aim to replicate **BDA1** but using **Spark SQL's built-in API functions** for querying and aggregation.
 
-## Overview  
+## **Exercises & Tasks**
 
-- **Spark SQL** is used for querying structured data efficiently.
-- **CSV files** are processed using **Spark’s map function** for initial transformations.
-- Queries are implemented using **built-in API functions**, avoiding direct SQL queries.
-- The dataset consists of **temperature and precipitation readings (1950-2014)**.
+### 1. Finding Extreme Temperatures (1950-2014)
+- **Goal:** Identify the lowest and highest recorded temperatures for each year.
+- **Dataset:** `temperature-readings.csv`
+- **Output:** List of years with corresponding extreme temperatures, sorted in descending order by maximum temperature.
+- **Key Consideration:** Filtering before applying reduce operations optimizes performance.
 
-## Exercises & Tasks 
+### 2. Counting High-Temperature Readings per Month
+- **Goal:** Count the number of temperature readings exceeding **10°C** per month.
+- **Dataset:** `temperature-readings.csv`
+- **Variations:**
+  - **All readings** above 10°C.
+  - **Distinct readings** per station (each station contributes at most once per month).
+- **Output:** Year, month, count of occurrences.
 
-### 1. Finding Extreme Temperatures (1950-2014)  
-- **Goal:** Identify the lowest and highest recorded temperatures per year.  
-- **Dataset:** `temperature-readings.csv`  
-- **Output:**  
-  - `year, station with max temp, maxValue ORDER BY maxValue DESC`  
-  - `year, station with min temp, minValue ORDER BY minValue DESC`  
+### 3. Average Monthly Temperature per Station (1960-2014)
+- **Goal:** Compute the average monthly temperature for each weather station.
+- **Dataset:** `temperature-readings.csv`
+- **Output:** Year, month, station number, and average monthly temperature.
+- **Key Consideration:** Not all stations have continuous readings for every month.
 
-### 2. Counting High-Temperature Readings per Month  
-- **Goal:** Count occurrences of temperature readings above 10°C per month.  
-- **Dataset:** `temperature-readings.csv`  
-- **Output:**  
-  - `year, month, count ORDER BY count DESC`  
-  - `year, month, distinct count (per station) ORDER BY count DESC`  
+### 4. Identifying Stations with Extreme Conditions
+- **Goal:** List stations where:
+  - Maximum temperature is between 25°C and 30°C.
+  - Maximum daily precipitation is between 100mm and 200mm.
+- **Datasets:** `temperature-readings.csv`, `precipitation-readings.csv`
+- **Output:** Station number, maximum temperature, and maximum precipitation.
 
-### 3. Average Monthly Temperature per Station (1960-2014) 
-- **Goal:** Compute the **average monthly temperature** per weather station.  
-- **Dataset:** `temperature-readings.csv`  
-- **Output:**  
-  - `year, month, station, avgMonthlyTemperature ORDER BY avgMonthlyTemperature DESC`  
-
-### 4. Identifying Stations with Extreme Conditions  
-- **Goal:** List stations where:  
-  - Maximum temperature is between 25°C and 30°C.  
-  - Maximum daily precipitation is between 100mm and 200mm.  
-- **Datasets:** `temperature-readings.csv`, `precipitation-readings.csv`  
-- **Output:**  
-  - `station, maxTemp, maxDailyPrecipitation ORDER BY station DESC`  
-
-### 5. Average Monthly Precipitation in Östergötland (1993-2016)  
-- **Goal:** Compute average monthly precipitation for the Östergötland region.  
-- **Datasets:** `precipitation-readings.csv`, `stations-Ostergotland.csv`  
-- **Output:**  
-  - `year, month, avgMonthlyPrecipitation ORDER BY year DESC, month DESC`  
+### 5. Average Monthly Precipitation in Östergötland (1993-2016)
+- **Goal:** Compute the average monthly precipitation for the Östergötland region.
+- **Datasets:** `precipitation-readings.csv`, `stations-Ostergotland.csv`
+- **Process:**
+  - Compute total monthly precipitation per station.
+  - Calculate monthly averages across all stations.
+- **Output:** Year, month, and average monthly precipitation.
 
