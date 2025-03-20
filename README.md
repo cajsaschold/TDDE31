@@ -1,5 +1,5 @@
 # Big Data Analytics
-This repository contains assignments from the Big Data Analytics (BDA1 & BDA2) course, focusing on Apache Spark, Spark SQL, and Machine Learning. The tasks involve processing large-scale weather datasets, performing data transformations, aggregations, and predictive modeling.
+This repository contains assignments on big data processing, Spark SQL, and machine learning using Apache Spark. It includes weather data analysis, distributed computing, and kernel-based temperature prediction with RDD transformations, SQL queries, and Gaussian kernel models. 
 
 ## Contents
 
