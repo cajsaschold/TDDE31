@@ -38,4 +38,3 @@ This repository contains a series of **Big Data Analytics (BDA1)** exercises foc
   - Compute total monthly precipitation per station.
   - Calculate monthly averages across all stations.
 - **Output:** Year, month, and average monthly precipitation.
-
