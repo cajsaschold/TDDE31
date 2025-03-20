@@ -4,7 +4,7 @@ This repository contains the implementation of **kernel-based temperature predic
 
 ## Overview  
 - Implements a kernel model in Spark (PySpark) to predict temperatures.  
-- Uses data from temperature-readings.csv and stations.csv.  
+- Uses data from `temperature-readings.csv` and `stations.csv`.  
 - Avoids Spark SQL and follows RDD-based operations for distributed computing.
 
 ## Methodology 
