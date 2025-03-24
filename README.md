@@ -1,5 +1,5 @@
 # Big Data Analytics
-This repository contains assignments on big data processing, Spark SQL, and machine learning using Apache Spark. It includes weather data analysis, distributed computing, and kernel-based temperature prediction with RDD transformations, SQL queries, and Gaussian kernel models. 
+Assignments on big data processing, Spark SQL, and machine learning using Apache Spark. The projects analyze weather data by leveraging distributed computing, RDD transformations, Spark SQL queries, and Gaussian kernel models.
 
 ## Contents
 
